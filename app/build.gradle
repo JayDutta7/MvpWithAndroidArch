@@ -61,20 +61,20 @@ android {
 dependencies {
   // Android Support
   implementation "androidx.appcompat:appcompat:$rootProject.supportVersion"
-  implementation "com.google.android.material:material:$rootProject.supportVersion"
-  implementation "androidx.recyclerview:recyclerview:$rootProject.supportVersion"
-  implementation "androidx.cardview:cardview:$rootProject.supportVersion"
+  implementation "com.google.android.material:material:$rootProject.materialVersion"
+  implementation "androidx.recyclerview:recyclerview:$rootProject.xrecyclerViewVersion"
+  implementation "androidx.cardview:cardview:$rootProject.cardViewVersion"
   implementation "androidx.constraintlayout:constraintlayout:$rootProject.constraintLayoutVersion"
 
   // Lifecycle arch
   implementation "androidx.lifecycle:lifecycle-runtime:$rootProject.archVersion"
-  implementation "androidx.lifecycle:lifecycle-extensions:$rootProject.archVersion"
+  implementation "androidx.lifecycle:lifecycle-extensions:$rootProject.archVersionExtension"
   kapt "androidx.lifecycle:lifecycle-compiler:$rootProject.archVersion"
 
   // Room
-  implementation "androidx.room:room-runtime:$rootProject.archVersion"
+  implementation "androidx.room:room-runtime:$rootProject.archRoomRunTime"
   kapt "androidx.room:room-compiler:$rootProject.archVersion"
-  implementation "androidx.room:room-rxjava2:$rootProject.archVersion"
+  implementation "androidx.room:room-rxjava2:$rootProject.archRoomRunTime"
 
   // Retrofit & OkHttp
   implementation "com.squareup.retrofit2:retrofit:$rootProject.retrofitVersion"
